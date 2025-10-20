@@ -59,19 +59,20 @@ h6{
 .nav{
     background-image: linear-gradient(to right ,rgb(0, 0, 0) , rgb(48, 48, 48));
     margin:auto;
-    padding: 14px;
+    padding:1px;
     position:initial;
     overflow:hidden;
+    word-spacing: 15px;
 }
 
 .nav li{
     color: rgb(255, 255, 255);
     text-decoration: none;
-    padding: 7px 20px;
-    display:inline;
+    padding: 12px 30px;
+    display:inline-block;
     border:1px solid;
     border-color: rgb(104, 104, 104);
-    border-radius: 7px;
+    border-radius: 14px;
 }
 
 .nav a{
@@ -104,7 +105,7 @@ h6{
 }
 
 .searchbox{
-    width: 300px; /* Sets the width of the input field */
+    width: 600px; /* Sets the width of the input field */
     height: 50px;
     border: 1px solid;
     font-size: 25px;
@@ -131,4 +132,31 @@ h6{
 .cpyright{
     text-align: center;
     margin: 10px;
+}
+
+.applogos{
+    text-align: center;
+    word-spacing: 80px;
+}
+
+#yt{
+    height: 60px;
+}
+#gmail{
+    height: 60px;
+}
+#fb{
+    height: 60px;
+}
+#gdrive{
+    height: 60px;
+}
+#spotify{
+    height: 60px;
+}
+#maps{
+    height: 60px;
+}
+#insta{
+    height: 60px;
 }
