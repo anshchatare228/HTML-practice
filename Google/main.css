@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(255, 255, 255);
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -7,6 +7,15 @@ body{
 
 .google{
     text-align: center;
+    text-shadow: 09px 07px 7px rgb(0, 0, 0);
+}
+
+.google h3{
+    text-shadow: 00px 00px 0px rgb(0, 0, 0);
+}
+
+.googlelogoaboutpage{  /* Adjustment configs on about.html*/
+    padding-left: 14px;
 }
 
 .google h1{
@@ -20,8 +29,9 @@ body{
 
 .google h1 span{
     display: inline-block;
-    margin: 0 0.05rem; /* smaller gap between letters */
+    margin: 0.05rem; /* smaller gap between letters */
     vertical-align: middle;
+    letter-spacing: -0.19em;
     
 }
 
@@ -84,7 +94,9 @@ h6{
 }
 
 .sbar h6{
+    color:rgb(45, 48, 4);
     font-size: 39px;
+    font-style: italic;
 }
 
 .txtbdy{
@@ -93,10 +105,15 @@ h6{
 }
 
 .txtbdy h1{
-    font-style: italic;
+    font-size: 40px;
+    letter-spacing: -0.001em;
 }
 
 .txtbdy h1::first-letter{
-    font-size: 50px;
+    font-size: 40px;
     margin: 0 0.05rem;
+}
+
+.cpyright{
+    margin: 10px;
 }
