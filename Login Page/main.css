@@ -1,0 +1,121 @@
+body{
+    background-image: linear-gradient(rgb(44, 44, 44) , black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+
+.mainbox{
+    background-color: rgb(44, 44, 44);
+    box-sizing: border-box;
+    text-align: center;
+    border: 2px solid rgb(82, 82, 82);
+    border-radius: 25px;
+    width: 400px; /* reasonable default width */
+    height: 550px; /* reasonable default height */
+    display: flex;
+    padding: 20px;
+}
+
+/* center the .mainbox in the viewport */
+html ,body{
+    height: 100%;
+    margin: 0 px;
+}
+
+.welcome h1{
+    display: inline;
+    font-family:'Times New Roman', Times, serif;
+    font-size:50px;
+    color: white;
+    margin: 0 px;
+    transition: 1s;
+}
+
+.welcome p{
+    display: inline;
+    font-family: sans-serif;
+    line-height: 3px;
+    font-size:15px;
+    color: white;
+    /* transition: 1s; */
+}
+
+.email{
+    position: fixed;
+    /* display: block; */
+    padding-bottom: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgb(48, 48, 48);
+    transition: 0.2s;
+    padding:10px;
+}
+
+.email:hover{
+    background-color: white;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    #email{
+        color:rgb(0, 0, 0);
+    }
+}
+
+#email{
+    padding-right: 135px;
+    font-size: 10;
+    color:white;
+}
+
+#emailbox{
+    transition: 1s;
+    border: 1px solid rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px 10px;
+}
+#emailbox:focus{
+    outline: none;
+
+}
+
+/* password block below */
+
+.password{
+    position: fixed;
+    display: block;
+    padding-top: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgb(48, 48, 48);
+    transition: 0.2s;
+    padding:10px;
+}
+
+.password:hover{
+    background-color: white;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    #password{
+        color:rgb(0, 0, 0);
+    }
+}
+
+#password{
+    padding-right: 105px;
+    font-size: 10;
+    color:white;
+}
+
+#passwordbox{
+    transition: 1s;
+    border: 1px solid rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px 10px;
+}
+#passwordbox:focus{
+    outline: none;
+}
