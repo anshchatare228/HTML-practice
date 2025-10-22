@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(rgb(197, 197, 197) , rgb(97, 88, 88));
+    background-image: linear-gradient(rgb(199, 204, 155) , rgb(67, 80, 109));
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -57,32 +57,39 @@ h6{
     padding-bottom: 15px;
 }
 .nav{
+    display: block;
     background-image: linear-gradient(to right ,rgb(0, 0, 0) , rgb(48, 48, 48));
-    margin:auto;
-    padding:1px;
-    position:initial;
-    overflow:hidden;
-    word-spacing: 15px;
+    padding: 1px;
+    word-spacing: 11px;
+}
+
+.navbox{
+    margin: 6px;
+    padding-left: 2px;
 }
 
 .nav li{
     color: rgb(255, 255, 255);
+    margin: 0px;
     text-decoration: none;
-    padding: 12px 30px;
+    padding: 10px 25px;
     display:inline-block;
-    border:1px solid;
+    border:2px solid;
     border-color: rgb(104, 104, 104);
-    border-radius: 14px;
+    border-radius: 20px;
 }
 
 .nav a{
     text-decoration: none;
     color: white;
+    box-sizing: 100px;
+    letter-spacing: 3px;
 }
 
 .nav li:hover{
     background-color: rgb(255, 255, 255);
-    border-color:rgb(46, 48, 48)
+    border-color:rgb(46, 48, 48);
+    /* font-size: 20px; */
 }
 
 .nav li:hover a{
