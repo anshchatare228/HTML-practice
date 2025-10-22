@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(rgb(44, 44, 44) , black);
+    background-image: linear-gradient(rgb(204, 204, 204) , rgb(119, 119, 119));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,7 +13,7 @@ body{
     box-sizing: border-box;
     text-align: center;
     border: 2px solid rgb(82, 82, 82);
-    border-radius: 25px;
+    border-radius: 5px;
     width: 400px; /* reasonable default width */
     height: 550px; /* reasonable default height */
     display: flex;
@@ -25,6 +25,11 @@ html ,body{
     height: 100%;
     margin: 0 px;
 }
+
+/* .welcome{
+    padding-left: 75px;
+} */
+ /* If we want the content in the center */
 
 .welcome h1{
     display: inline;
@@ -102,6 +107,12 @@ html ,body{
     #password{
         color:rgb(0, 0, 0);
     }
+
+    .transmod{
+        transition: 1S;
+        display: block;
+        padding-TOP: 40px;
+    }
 }
 
 #password{
@@ -119,3 +130,88 @@ html ,body{
 #passwordbox:focus{
     outline: none;
 }
+
+
+
+#forgotpass{
+    display:inline;
+    text-decoration: none;
+    color: white;
+    padding-right: 70px;
+    line-height: 40px;
+}
+
+#signup{
+    display:inline;
+    text-decoration: none;
+    color: white;
+    padding-right: 105px;
+    line-height: 30px;
+}
+
+#loginbutton{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    position:absolute;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: 140px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: rgb(233, 218, 13);
+    transition: 0.5s;
+    line-height: 30px;
+}
+
+#loginbutton:hover{
+    line-height: 10px;
+    transition: 0.2s;
+    background-color:rgb(233, 218, 13);
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    margin-left: 140px;
+    border: 2px solid black;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    line-height: 20px;
+}
+
+.footer{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+#newhere{
+    display: inline;
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding-right: 75px;
+    font-size: 20px;
+    line-height: 10px;
+    transition: 1s;
+}
+
+#signup{
+    display:block;
+    font-style: italic;
+    position: relative;
+    padding-right: 125px;
+    line-height: 25px;
+}
+    
+/* .banner{
+    background-color: rgba(255, 255, 255, 0.555);
+    border-radius:20px;
+    margin-left: 30px;
+    padding-left:120px;
+    transition: 1s;
+}
+.banner:hover{
+    transition: 0.2s;
+    background-color: white;
+    margin-left: 30px;
+    padding-left:120px;
+    padding-right: 0px;
+} */
