@@ -1,23 +1,52 @@
+
 body{
-    background-image: linear-gradient(rgb(204, 204, 204) , rgb(119, 119, 119));
+    background-image: linear-gradient(rgb(0, 0, 0) , rgb(0, 0, 0));
     display: flex;
+    
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-
+    overflow:hidden;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: linear-gradient(135deg, #667eea 0%, #7952a0 100%); */
 }
 
 
 .mainbox{
-    background-color: rgb(44, 44, 44);
+    background-color: rgba(255, 255, 255, 0.103);
     box-sizing: border-box;
     text-align: center;
-    border: 2px solid rgb(82, 82, 82);
-    border-radius: 5px;
-    width: 400px; /* reasonable default width */
-    height: 550px; /* reasonable default height */
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    width: 300px; /* reasonable default width */
+    height: 500px; /* reasonable default height */
     display: flex;
+    
+    position: relative;
+    left: 40px;
     padding: 20px;
+    padding-left: 10px;
+    transform:scale(1.3);
+    backdrop-filter: blur(5px);
+    /* box-shadow: 0px 0px 10px rgb(0, 0, 0); */
+}
+
+.email:hover{
+    transition: 0.4s;
+    transform: scale(1.05); 
+}
+
+.password:hover{
+    transition: 0.4s;
+    transform: scale(1.05);
+}
+
+.bgimg{
+    position:absolute;
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
 }
 
 /* center the .mainbox in the viewport */
@@ -26,15 +55,15 @@ html ,body{
     margin: 0 px;
 }
 
-/* .welcome{
-    padding-left: 75px;
-} */
+.welcome{
+    padding-left: 30px;
+}
  /* If we want the content in the center */
 
 .welcome h1{
     display: inline;
-    font-family:'Times New Roman', Times, serif;
-    font-size:50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:40px;
     color: white;
     margin: 0 px;
     transition: 1s;
@@ -55,14 +84,13 @@ html ,body{
     padding-bottom: 5px;
     border: 2px solid white;
     border-radius: 10px;
-    background-color: rgb(48, 48, 48);
+    background-color: rgba(48, 48, 48, 0);
     transition: 0.2s;
     padding:10px;
 }
 
 .email:hover{
     background-color: white;
-    padding-right: 50px;
     padding-bottom: 30px;
     #email{
         color:rgb(0, 0, 0);
@@ -76,14 +104,24 @@ html ,body{
 }
 
 #emailbox{
-    transition: 1s;
+    transition: 0.6s;
     border: 1px solid rgba(255, 255, 255, 0);
     background-color: rgba(255, 255, 255, 0);
     padding: 10px 10px;
+    color: white;
 }
+
+#emailbox:hover{
+    color: black;
+}
+
 #emailbox:focus{
     outline: none;
 
+}
+
+#emailbox::placeholder{
+    color: rgb(148, 148, 148);
 }
 
 /* password block below */
@@ -94,15 +132,14 @@ html ,body{
     padding-top: 5px;
     border: 2px solid white;
     border-radius: 10px;
-    background-color: rgb(48, 48, 48);
+    background-color: rgba(48, 48, 48, 0);
     transition: 0.2s;
     padding:10px;
 }
 
 .password:hover{
     background-color: white;
-    padding-right: 50px;
-    padding-top: 5px;
+    
     padding-bottom: 30px;
     #password{
         color:rgb(0, 0, 0);
@@ -126,15 +163,23 @@ html ,body{
     border: 1px solid rgba(255, 255, 255, 0);
     background-color: rgba(255, 255, 255, 0);
     padding: 10px 10px;
+    color: white;
 }
 #passwordbox:focus{
     outline: none;
+}
+#passwordbox::placeholder{
+    color: rgb(148, 148, 148);
+}
+
+#passwordbox:hover{
+    color: black;
 }
 
 
 
 #forgotpass{
-    display:inline;
+    display:inline-block;
     text-decoration: none;
     color: white;
     padding-right: 70px;
@@ -147,6 +192,11 @@ html ,body{
     color: white;
     padding-right: 105px;
     line-height: 30px;
+    display:block;
+    /* font-style: italic; */
+    position: relative;
+    padding-right: 125px;
+    line-height: 25px;
 }
 
 #loginbutton{
@@ -159,7 +209,7 @@ html ,body{
     padding-right: 20px;
     padding-left: 20px;
     margin-left: 140px;
-    border: 2px solid black;
+    border: 0px solid rgb(255, 255, 255) ;
     border-radius: 15px;
     background-color: rgb(233, 218, 13);
     transition: 0.5s;
@@ -167,17 +217,16 @@ html ,body{
 }
 
 #loginbutton:hover{
-    line-height: 10px;
-    transition: 0.2s;
-    background-color:rgb(233, 218, 13);
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 30px;
-    margin-left: 140px;
-    border: 2px solid black;
-    letter-spacing: 2px;
-    border-radius: 20px;
-    line-height: 20px;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#hr{
+    transition: 2s;
+    position: fixed;
+    display: block;
+    padding-right: 394px;
+    margin-left: -89px;
 }
 
 .footer{
@@ -189,16 +238,8 @@ html ,body{
     color: rgb(255, 255, 255);
     padding-right: 75px;
     font-size: 20px;
-    line-height: 10px;
     transition: 1s;
-}
-
-#signup{
-    display:block;
-    font-style: italic;
-    position: relative;
-    padding-right: 125px;
-    line-height: 25px;
+    line-height: 10px;
 }
     
 /* .banner{
@@ -215,3 +256,19 @@ html ,body{
     padding-left:120px;
     padding-right: 0px;
 } */
+
+.footlinks a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    /* top: 400px; */
+    padding-right: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.footlinks{
+    bottom: 50px;
+    position:absolute;
+    margin-left: 90px;
+}
