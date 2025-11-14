@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
 body{
-    background-image: linear-gradient(rgb(199, 204, 155) , rgb(67, 80, 109));
+    background-image: linear-gradient( 175deg ,#7e7e7e , #3c3c3c ) ;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.googlelogoaboutpage{
+    background-image: linear-gradient( 150deg ,#a0a0a0  ,#3c3c3c ,#858585 ) ;
+    
+}
 
 .google{
     text-align: center;
@@ -11,9 +18,10 @@ body{
     padding-top: 28px ;
     padding-bottom: 28px ;
 }
- #readhere{
+
+#readhere{
     text-decoration: none;
- }
+}
 .google h3{
     text-shadow: 00px 00px 0px rgb(0, 0, 0);
 }
@@ -58,42 +66,55 @@ h6{
 }
 .nav{
     display: block;
-    background-image: linear-gradient(to right ,rgb(0, 0, 0) , rgb(48, 48, 48));
-    padding: 1px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background-image: linear-gradient(to right ,rgb(0, 0, 0) , rgb(0, 0, 0));
     word-spacing: 11px;
 }
 
 .navbox{
-    margin: 6px;
-    padding-left: 2px;
+    margin: 0px;
+    padding: 5px;
 }
 
-.nav li{
+.nav ul li{
     color: rgb(255, 255, 255);
-    margin: 0px;
+    margin-left: 0px;
     text-decoration: none;
     padding: 10px 25px;
     display:inline-block;
     border:2px solid;
     border-color: rgb(104, 104, 104);
     border-radius: 20px;
-}
-
-.nav a{
-    text-decoration: none;
-    color: white;
-    box-sizing: 100px;
-    letter-spacing: 3px;
+    transition: 0.3s;
 }
 
 .nav li:hover{
     background-color: rgb(255, 255, 255);
     border-color:rgb(46, 48, 48);
     /* font-size: 20px; */
+    margin-right: 10px;
+    padding-right: 70px;
+    transition: 0.3s;
 }
+.nav a{
+    text-decoration: none;
+    color: white;
+    box-sizing: 100px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
 
 .nav li:hover a{
     color:rgb(0, 0, 0);
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.nav ul li.active{
+    background-color: white;
 }
 
 .body{
@@ -108,43 +129,92 @@ h6{
 .sbar h6{
     color:rgb(45, 48, 4);
     font-size: 39px;
+ 
     font-style: italic;
 }
 
 .searchbox{
     width: 600px; /* Sets the width of the input field */
     height: 50px;
-    border: 1px solid;
+    margin-left: 34%;
+    /* border: 1px solid; */
     font-size: 25px;
     border-radius: 13px;
-    background-color: rgb(235, 235, 235);
+    background-color: rgba(235, 235, 235, 0);
+    /* box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); */
+}
+
+#mainsearchbox{
+    padding: 20px;
+    padding-right: 300px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    transform: scale(1);
+    transition: transform 0.6s ease-in-out ,box-shadow 0.6s ease-in-out;
+}
+
+#mainsearchbox:hover{
+    transform:scale(1.02); 
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.879);
     
 }
 
+#scrsub{
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px;
+    left: 200px;
+}
+
 .txtbdy{
+    
     font-size: 20px;
-    margin: 20px;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
+.txtbdy p{
+    font-size: 25px;
+    font-family: 'Raleway';
+    transition: color 0.2s ease-in-out;
+}
+
+.txtbdy p:hover{
+    color: white;
 }
 
 .txtbdy h1{
+    font-family: 'poppins';
     font-size: 40px;
     letter-spacing: -0.001em;
+    transition: color 0.2s ease-in-out;
+}
+
+.txtbdy h1:hover{
+    color: white;
+
 }
 
 .txtbdy h1::first-letter{
-    font-size: 40px;
+    font-size: 55px;
     margin: 0 0.05rem;
+}
+
+.txtbdy li{
+    margin-left: 20px;
 }
 
 .cpyright{
     text-align: center;
     margin: 10px;
+    color: white;
 }
 
 .applogos{
     text-align: center;
     word-spacing: 80px;
 }
+
 
 #yt{
     height: 60px;
