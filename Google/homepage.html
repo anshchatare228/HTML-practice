@@ -10,23 +10,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Lexend+Mega:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="google">
-        <h1 class="googleltr">
-            <span id="G">G</span>
-            <span id="O">o</span>
-            <span id="o">o</span>
-            <span id="g">g</span>
-            <span id="l">l</span>
-            <span id="e">e</span>
-        </h1>
-        <h3>World On Your Fingertips</h3>
+    <div class="googlelogoaboutpage">
+        <div class="google">
+            <h1 class="googleltr">
+                <span id="G">G</span>
+                <span id="O">o</span>
+                <span id="o">o</span>
+                <span id="g">g</span>
+                <span id="l">l</span>
+                <span id="e">e</span>
+            </h1>
+            <h3>World On Your Fingertips</h3>
+        </div>
     </div>
+
     <nav class="nav">
         <ul class="navbox">
-            <li><a href="#">HOME</li></a>
+            <li><a href="homepage.html" class="active">HOME</li></a>
             <li><a href="about.html">ABOUT</li></a>
             <li><a href="services.html">SERVICES</li></a>
-            <li><a href="#">CONTACT</li></a>
+            <li><a href="contact.html">CONTACT</li></a>
         </ul>        
     </nav>
     <br>
@@ -37,21 +40,24 @@
     <div class="body">
         <div class="sbar">
             <h6>Curiosity Starts Here...</h6>
-            <div>
+            <!-- <div>
                 <input type="comment" placeholder="                                  Search Here" class="searchbox">
-            </div>
+            </div> -->
+            <form action="https://www.google.com/search" method="get" class="mainsearchbox" target="_blank" >
+            <input type="text" name="q" placeholder="Search Google..." id="mainsearchbox" />
+            <br>
+            <input type="submit" value="Search" id="scrsub" />
+            </form>
         </div>
     </div>
     <br>
     <br>
     <br>
     <br>
-    <br>
-    <br>
     <div class="applogos">
-        <a href="https://www.youtube.com"><img src="images/yt.png" alt="youtube" id="yt"></a>
-        <a href="https://www.gmail.com"><img src="images/gmail.png" alt="Gmail" id="gmail"></a>
-        <a href="https://facebook.com"><img src="images/fb.png" alt="Facebook" id="fb"></a>
+        <a href="https://www.youtube.com" target="_blank"><img src="images/yt.png" alt="youtube" id="yt"></a>
+        <a href="https://www.gmail.com" target="_blank"><img src="images/gmail.png" alt="Gmail" id="gmail"></a>
+        <a href="https://facebook.com" target="_blank"><img src="images/fb.png" alt="Facebook" id="fb"></a>
         <img src="images/gdrive.png" alt="Gdrive" id="gdrive">
         <br>
         <br>
