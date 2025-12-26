@@ -21,10 +21,13 @@
     .fade-in {
       animation: fadeIn 0.8s ease-out forwards;
     }
+    .footer-links{
+      @apply hover:text-yellow-300 transition-all duration-300 ease-out;
+    }
   </style>
 </head>
 
-<body class="min-h-screen overflow-x-hidden w-full sm:w-full bg-[url('media/dark-bg.jpg')]">
+<body class="min-h-screen overflow-x-hidden w-[30rem] md:w-full bg-black">
   <video 
     autoplay muted loop playsinline
     class="fixed top-0 left-0 w-full h-full object-cover -z-10">
@@ -35,7 +38,7 @@
   <header class="sticky top-0 z-50 flex flex-row bg-white/0 backdrop-blur-[0.4rem] justify-between items-center h-[5.4rem]">
 
     <div class="flex flex-row justify-center items-center">
-      <h1 class=" text-yellow-300 font-['Spectral_SC'] tracking-[1rem] text-[2rem] ml-11">SANITY</h1>
+      <h1 class=" text-yellow-300 font-['Spectral_SC'] tracking-[1rem] text-lg md:text-xl lg:text-2xl ml-4 md:ml-8 lg:ml-11">SANITY</h1>
       <div class="flex flex-col items-start mt-2">
         <h6 class="text-white font-mono text-[0.89rem] mt-[-0.5rem] tracking-[0.1rem] pl-[2rem] ml-[-2.5rem]">ALWAYS</h6>
         <h6 class="text-white font-mono text-[0.89rem] mt-[-0.5rem] tracking-[0.1rem] pl-[2rem] ml-[-2.5rem]">AHEAD</h6>
@@ -59,7 +62,7 @@
       </ul>
     </div>
 
-    <div class="flex mr-[4rem]">
+    <div class="flex mr-4 md:mr-8 lg:mr-16">
       <ul class="flex h-[2.67rem] sm:gap-[2.5rem] font-['Roboto_Condensed'] items-center text-white">
         <li class="px-[0.4rem] rounded-[7px] border-black hover:text-yellow-300 transition-all duration-300 ease-out">
           <a href="#">CONTACT US</a>
@@ -78,16 +81,35 @@
   <main>                
 
     <div class="flex bg-white/60 justify-center items-center backdrop-blur-[0.4rem] h-[18rem] ">                
-      <h1 class="font-['Vina_Sans'] text-[5rem] text-black">BACKGROUND VIDEO HERE</h1>                 
+      <h1 class="font-['Vina_Sans'] text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-black">BACKGROUND VIDEO HERE</h1>                 
     </div>    
 
     <!-- PRODUCT LISTINGS -->
-    <div class="my-[3rem] flex justify-around">
+    <div class="my-[3rem] flex flex-wrap justify-around gap-4">
       <div class="h-[22rem] w-[18rem] bg-white/10 rounded-[2rem] flex backdrop-blur-[0.5rem] hover:bg-white/30 hover:scale-[1.05] transition-all duration-[0.3s]">
         <img src="media/shoes2.png" alt="" class="absolute w-[18rem] h-[15rem] mt-7">
         <div>
           <div>
             <p class="flex justify-center items-center mt-[15rem] w-[18rem] text-[1.4rem] text-white/100 hover:text-black">Air Jordans 1 lbs</p>
+          </div>
+        </div>
+      </div>
+      <div  class="h-[22rem] w-[18rem] bg-white/10 rounded-[2rem] flex backdrop-blur-[0.5rem] hover:bg-white/30 hover:scale-[1.05] transition-all duration-[0.3s]">
+
+      </div>
+      <div  class="h-[22rem] w-[18rem] bg-white/10 rounded-[2rem] flex backdrop-blur-[0.5rem] hover:bg-white/30 hover:scale-[1.05] transition-all duration-[0.3s]">
+
+      </div>
+      <div  class="h-[22rem] w-[18rem] bg-white/10 rounded-[2rem] flex backdrop-blur-[0.5rem] hover:bg-white/30 hover:scale-[1.05] transition-all duration-[0.3s]">
+
+      </div>
+    </div>
+    <div class="my-[3rem] flex flex-wrap justify-around gap-4">
+      <div class="h-[22rem] w-[18rem] bg-white/10 rounded-[2rem] flex backdrop-blur-[0.5rem] hover:bg-white/30 hover:scale-[1.05] transition-all duration-[0.3s]">
+        <img src="media/shoes2.png" alt="" class="absolute w-[18rem] h-[15rem] mt-7">
+        <div>
+          <div>
+            <p class="flex justify-center items-center mt-[15rem] w-[18rem] text-[1.4rem] text-white/100 hover:text-black">Hoodies</p>
           </div>
         </div>
       </div>
@@ -104,7 +126,7 @@
 
       </div>
     </div>
-    <div class="my-[3rem] flex justify-around">
+    <div class="my-[3rem] flex flex-wrap justify-around gap-4">
       <div class="h-[22rem] w-[18rem] bg-white/10 rounded-[2rem] flex backdrop-blur-[0.5rem] hover:bg-white/30 hover:scale-[1.05] transition-all duration-[0.3s]">
         <img src="media/shoes2.png" alt="" class="absolute w-[18rem] h-[15rem] mt-7">
         <div>
@@ -112,9 +134,6 @@
             <p class="flex justify-center items-center mt-[15rem] w-[18rem] text-[1.4rem] text-white/100 hover:text-black">Air Jordans 1 lbs</p>
           </div>
         </div>
-      </div>
-      <div  class="h-[22rem] w-[18rem] bg-white/10 rounded-[2rem] flex backdrop-blur-[0.5rem] hover:bg-white/30 hover:scale-[1.05] transition-all duration-[0.3s] ">
-
       </div>
       <div  class="h-[22rem] w-[18rem] bg-white/10 rounded-[2rem] flex backdrop-blur-[0.5rem] hover:bg-white/30 hover:scale-[1.05] transition-all duration-[0.3s]">
 
@@ -135,40 +154,40 @@
         <p>All rights reserved © 2025</p>
       </div>
 
-      <div class="flex ml-10 gap-10">
+      <div class="flex md:flex-row ml-4 md:ml-10 gap-4 md:gap-11">
         <div>
           <ul class="">
-            <h2 class="font-bold text-[2.4rem] font-['Roboto_Condensed']">Resources</h2>
-            <li class="flex flex-col text-[1.5rem] gap-4">
-              <a>Find a store</a>
-              <a>Become a member</a>
-              <a>Product advice</a>
-              <a>Nike coaching</a>
-              <a>Send us a feedback</a>
+            <h2 class="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl font-['Roboto_Condensed']">Resources</h2>
+            <li class="flex flex-col text-sm md:text-base lg:text-lg gap-4">
+              <a href="#" class="hover:text-yellow-300 transition-all duration-300 ease-out">Find a store</a>
+              <a href="#" class="hover:text-yellow-300 transition-all duration-300 ease-out">Become a member</a>
+              <a href="#" class="hover:text-yellow-300 transition-all duration-300 ease-out">Product advice</a>
+              <a href="#" class="hover:text-yellow-300 transition-all duration-300 ease-out">Nike coaching</a>
+              <a href="#" class="hover:text-yellow-300 transition-all duration-300 ease-out">Send us a feedback</a>
             </li>
           </ul>
         </div>
         <div>
           <ul class="">
-            <h2 class="font-bold text-[2.4rem] font-['Roboto_condensed']">Help</h2>
-            <li class="flex flex-col text-[1.5rem] gap-4">
-              <a>Get help</a>
-              <a>Order status</a>
-              <a>Delivery</a>
-              <a>Returns</a>
-              <a>Payment options</a>
+            <h2 class="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl font-['Roboto_condensed']">Help</h2>
+            <li class="flex flex-col text-sm md:text-base lg:text-lg gap-4">
+              <a href="#" class="hover:text-yellow-300 transition-all duration-300 ease-out">Get help</a>
+              <a href="#" class="hover:text-yellow-300 transition-all duration-300 ease-out">Order status</a>
+              <a href="#" class="hover:text-yellow-300 transition-all duration-300 ease-out">Delivery</a>
+              <a href="#" class="hover:text-yellow-300 transition-all duration-300 ease-out">Returns</a>
+              <a href="#" class="hover:text-yellow-300 transition-all duration-300 ease-out">Payment options</a>
             </li>
           </ul>
         </div>
         <div>
           <ul class="">
-            <h2 class="font-bold text-[2.4rem] font-['Roboto_condensed']">Company</h2>
-            <li class="flex flex-col text-[1.5rem] gap-4">
-              <a>Find a store</a>
-              <a>Become a member</a>
-              <a>Product advice</a>
-              <a>Nike coaching</a>
-              <a>Send us a feedback</a>
+            <h2 class="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl font-['Roboto_condensed']">Company</h2>
+            <li class="flex flex-col text-sm md:text-base lg:text-lg gap-4">
+              <a href="#" class="hover:text-yellow-300 transition-all duration-300 ease-out">Find a store</a>
+              <a href="#" class="hover:text-yellow-300 transition-all duration-300 ease-out">Become a member</a>
+              <a href="#" class="hover:text-yellow-300 transition-all duration-300 ease-out">Product advice</a>
+              <a href="#" class="hover:text-yellow-300 transition-all duration-300 ease-out">Nike coaching</a>
+              <a href="#" class="hover:text-yellow-300 transition-all duration-300 ease-out">Send us a feedback</a>
             </li>
           </ul>
         </div>
