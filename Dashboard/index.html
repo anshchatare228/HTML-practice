@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+
+</head>
+<body class="bg-black">
+
+    <div class="grid grid-cols-[5%_95%] h-screen overflow-x-hidden">
+        <nav class="bg-white flex flex-col items-center">
+            <div class="">
+                <img src="media/icons/grip.png" class="h-8 w-8 mt-6 cursor-pointer">
+                <h2 class="cursor-pointer"></h2>
+            </div>
+            <div class="">
+                <img src="media/icons/home.png" class="h-8 w-8 mt-10 cursor-pointer ml-1">
+                <h2 class="cursor-pointer">Home</h2>
+            </div>
+            <div class="">
+                <img src="media/icons/explore.png" class="h-8 w-8 mt-10 cursor-pointer ml-2">
+                <h2 class="cursor-pointer">Explore</h2>
+            </div>
+            <div class="">
+                <img src="media/icons/subs.png" class="h-8 w-8 mt-10 cursor-pointer ml-3">
+                <h2 class="cursor-pointer">Orignals</h2>
+            </div>
+            <div class="">
+                <img src="media/icons/yt.png" class="h-8 w-8 mt-10 cursor-pointer ml-3">
+                <h2 class="cursor-pointer">Orignals</h2>
+            </div>
+            <div class="">
+                <img src="media/icons/ytm.png" class="h-8 w-8 mt-10 cursor-pointer ml-3">
+                <h2 class="cursor-pointer">YT Music</h2>
+            </div>
+            <div class="">
+                <img src="media/icons/library.png" class="h-8 w-8 mt-10 cursor-pointer ml-2">
+                <h2 class="cursor-pointer">Library</h2>
+            </div>
+        </nav>
+        <main class=" bg-[#D4D4D4]">
+            <nav class="bg-white w-full h-[4rem] border-b border-black/60 flex justify-between items-center">
+
+                <!-- left nav -->
+                <div class="flex items-center ml-4">
+                    <img src="media/icons/yt.png" class="">
+                    <h1 class="font-['impact'] text-[2rem]">YouTube</h1>
+                </div>
+
+                <!-- middle nav -->
+                <div class="flex flex-row items-center">
+                    <div class="w-[25rem] h-9 border border-black flex justify-end">
+                        <input placeholder="Search" class="w-full ml-2 outline-none">
+                        <div class="border-l border-b border-black bg-[#D4D4D4] z-0 black w-12 h-[2.2rem]">
+                            <img src="media/icons/search.png" class="ml-2 cursor-pointer">
+                        </div>
+                    </div>
+                    <div class="border border-black rounded-[10rem] ml-3 h-8 w-8 bg-[#D4D4D4] cursor-pointer">
+                        <img src="media/icons/mic.png" class="h-7 pl-[0.06rem]">
+                    </div>
+                </div>
+
+                <!-- right nav -->
+                <div class="mr-3">
+                    <div class="flex justify-between gap-4">
+                        <img src="media/icons/notification.png" class="w-8">
+                        <img src="media/icons/profilePhoto.png" class="h-8 w-8 rounded-[10rem] border border-black ">
+                    </div>
+                </div>
+            </nav>
+
+            <!-- wrapper with all the thumbnails -->
+            <div>
+                <!-- row of four -->
+                <div class="flex flex-col lg:flex-row justify-between p-10">
+                    <div>
+                        <!-- video with the time tag -->
+                        <div class="bg-red-500/00 hover:scale-110 hover:bg-red-500/30">
+                            <img src="media/thumbnails/bmw.jpg" class="w-[25rem]">
+                            <h1 class="text-[1rem] w-10 text-white bg-black rounded-md mt-[-1.9rem] ml-[22rem] relative">17:46</h1>
+                        </div>
+                        <!-- profile with title  -->
+                        <div class="border border-black/0 w-[25rem] h-[7rem] mt-5 flex ">
+                            <div>
+                                <img src="media/icons/profilePhoto.png" class="h-12 w-14 rounded-[10rem]">
+                            </div>
+                            <div class="border border-black/0 w-[24rem] ml-2 ">
+                                <h1 class="font-bold">Mercedes E450 - Fast But Super Smooth & Comfortable | Faisal Khan</h1>
+                                <h1>faizal Khan</h1>
+                                <h1>28k views ‎ ‎ ‎ ‎ ‎  6 hours ago</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- video with the time tag -->
+                        <div class="">
+                            <img src="media/thumbnails/engine.jpg" class="w-[25rem]">
+                            <h1 class="text-[1rem] w-10 text-white bg-black rounded-md mt-[-1.9rem] ml-[22rem] relative">17:46</h1>
+                        </div>
+                        <!-- profile with title  -->
+                        <div class="border border-black/0 w-[25rem] h-[7rem] mt-5 flex ">
+                            <div>
+                                <img src="media/icons/profilePhoto.png" class="h-12 w-14 rounded-[10rem]">
+                            </div>
+                            <div class="border border-black/0 w-[24rem] ml-2 ">
+                                <h1 class="font-bold">Why enignes don't melt</h1>
+                                <h1>matriri3D</h1>
+                                <h1>295k views ‎ ‎ ‎ ‎ ‎  3 weeks ago</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- video with the time tag -->
+                        <div class="">
+                            <img src="media/thumbnails/ferrari.jpg" class="w-[25rem]">
+                            <h1 class="text-[1rem] w-10 text-white bg-black rounded-md mt-[-1.9rem] ml-[22rem] relative">17:46</h1>
+                        </div>
+                        <!-- profile with title  -->
+                        <div class="border border-black/0 w-[25rem] h-[7rem] mt-5 flex ">
+                            <div>
+                                <img src="media/icons/profilePhoto.png" class="h-12 w-14 rounded-[10rem]">
+                            </div>
+                            <div class="border border-black/0 w-[24rem] ml-2 ">
+                                <h1 class="font-bold">The SF26 fired up for the first time</h1>
+                                <h1>Ferrari</h1>
+                                <h1>2M views ‎ ‎ ‎ ‎ ‎  16 hours ago</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- video with the time tag -->
+                        <div class="">
+                            <img src="media/thumbnails/gun.jpg" class="w-[25rem]">
+                            <h1 class="text-[1rem] w-10 text-white bg-black rounded-md mt-[-1.9rem] ml-[22rem] relative">17:46</h1>
+                        </div>
+                        <!-- profile with title  -->
+                        <div class="border border-black/0 w-[25rem] h-[7rem] mt-5 flex ">
+                            <div>
+                                <img src="media/icons/profilePhoto.png" class="h-12 w-14 rounded-[10rem]">
+                            </div>
+                            <div class="border border-black/0 w-[24rem] ml-2 ">
+                                <h1 class="font-bold">The physics behind guns</h1>
+                                <h1>ECHOZERO</h1>
+                                <h1>764k views ‎ ‎ ‎ ‎ ‎  1 year ago</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row justify-between p-10">
+                    <div>
+                        <!-- video with the time tag -->
+                        <div class="">
+                            <img src="media/thumbnails/mrb.jpg" class="w-[25rem]">
+                            <h1 class="text-[1rem] w-10 text-white bg-black rounded-md mt-[-1.9rem] ml-[22rem] relative">17:46</h1>
+                        </div>
+                        <!-- profile with title  -->
+                        <div class="border border-black/0 w-[25rem] h-[7rem] mt-5 flex ">
+                            <div>
+                                <img src="media/icons/profilePhoto.png" class="h-12 w-14 rounded-[10rem]">
+                            </div>
+                            <div class="border border-black/0 w-[24rem] ml-2 ">
+                                <h1 class="font-bold">100 Celebrities compete for 100,000,00$</h1>
+                                <h1>Mr. Beast</h1>
+                                <h1>4.6M views ‎ ‎ ‎ ‎ ‎  4 days ago</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- video with the time tag -->
+                        <div class="">
+                            <img src="media/thumbnails/piano.jpg" class="w-[25rem]">
+                            <h1 class="text-[1rem] w-10 text-white bg-black rounded-md mt-[-1.9rem] ml-[22rem] relative">17:46</h1>
+                        </div>
+                        <!-- profile with title  -->
+                        <div class="border border-black/0 w-[25rem] h-[7rem] mt-5 flex ">
+                            <div>
+                                <img src="media/icons/profilePhoto.png" class="h-12 w-14 rounded-[10rem]">
+                            </div>
+                            <div class="border border-black/0 w-[24rem] ml-2 ">
+                                <h1 class="font-bold">Mercedes E450 - Fast But Super Smooth & Comfortable | Faisal Khan</h1>
+                                <h1>faizal Khan</h1>
+                                <h1>28k views ‎ ‎ ‎ ‎ ‎  6 hours ago</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- video with the time tag -->
+                        <div class="">
+                            <img src="media/thumbnails/rb.jpg" class="w-[25rem]">
+                            <h1 class="text-[1rem] w-10 text-white bg-black rounded-md mt-[-1.9rem] ml-[22rem] relative">17:46</h1>
+                        </div>
+                        <!-- profile with title  -->
+                        <div class="border border-black/0 w-[25rem] h-[7rem] mt-5 flex ">
+                            <div>
+                                <img src="media/icons/profilePhoto.png" class="h-12 w-14 rounded-[10rem]">
+                            </div>
+                            <div class="border border-black/0 w-[24rem] ml-2 ">
+                                <h1 class="font-bold">The RB17 unvailed by a stunt plane !</h1>
+                                <h1>RedBull Racing</h1>
+                                <h1>1.6M views ‎ ‎ ‎ ‎ ‎  11 hours ago</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- video with the time tag -->
+                        <div class="">
+                            <img src="media/thumbnails/rll.jpg" class="w-[25rem]">
+                            <h1 class="text-[1rem] w-10 text-white bg-black rounded-md mt-[-1.9rem] ml-[22rem] relative">17:46</h1>
+                        </div>
+                        <!-- profile with title  -->
+                        <div class="border border-black/0 w-[25rem] h-[7rem] mt-5 flex ">
+                            <div>
+                                <img src="media/icons/profilePhoto.png" class="h-12 w-14 rounded-[10rem]">
+                            </div>
+                            <div class="border border-black/0 w-[24rem] ml-2 ">
+                                <h1 class="font-bold">Why turkey and Israel teamed up against Syria ?</h1>
+                                <h1>Real Life Lore</h1>
+                                <h1>421k views ‎ ‎ ‎ ‎ ‎  1 week ago</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row justify-between p-10">
+                    <div>
+                        <!-- video with the time tag -->
+                        <div class="">
+                            <img src="media/thumbnails/rll.jpg" class="w-[25rem]">
+                            <h1 class="text-[1rem] w-10 text-white bg-black rounded-md mt-[-1.9rem] ml-[22rem] relative">17:46</h1>
+                        </div>
+                        <!-- profile with title  -->
+                        <div class="border border-black/0 w-[25rem] h-[7rem] mt-5 flex ">
+                            <div>
+                                <img src="media/icons/profilePhoto.png" class="h-12 w-14 rounded-[10rem]">
+                            </div>
+                            <div class="border border-black/0 w-[24rem] ml-2 ">
+                                <h1 class="font-bold">Mercedes E450 - Fast But Super Smooth & Comfortable | Faisal Khan</h1>
+                                <h1>faizal Khan</h1>
+                                <h1>28k views ‎ ‎ ‎ ‎ ‎  6 hours ago</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- video with the time tag -->
+                        <div class="">
+                            <img src="media/thumbnails/bmw.jpg" class="w-[25rem]">
+                            <h1 class="text-[1rem] w-10 text-white bg-black rounded-md mt-[-1.9rem] ml-[22rem] relative">17:46</h1>
+                        </div>
+                        <!-- profile with title  -->
+                        <div class="border border-black/0 w-[25rem] h-[7rem] mt-5 flex ">
+                            <div>
+                                <img src="media/icons/profilePhoto.png" class="h-12 w-14 rounded-[10rem]">
+                            </div>
+                            <div class="border border-black/0 w-[24rem] ml-2 ">
+                                <h1 class="font-bold">Mercedes E450 - Fast But Super Smooth & Comfortable | Faisal Khan</h1>
+                                <h1>faizal Khan</h1>
+                                <h1>28k views ‎ ‎ ‎ ‎ ‎  6 hours ago</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- video with the time tag -->
+                        <div class="">
+                            <img src="media/thumbnails/bmw.jpg" class="w-[25rem]">
+                            <h1 class="text-[1rem] w-10 text-white bg-black rounded-md mt-[-1.9rem] ml-[22rem] relative">17:46</h1>
+                        </div>
+                        <!-- profile with title  -->
+                        <div class="border border-black/0 w-[25rem] h-[7rem] mt-5 flex ">
+                            <div>
+                                <img src="media/icons/profilePhoto.png" class="h-12 w-14 rounded-[10rem]">
+                            </div>
+                            <div class="border border-black/0 w-[24rem] ml-2 ">
+                                <h1 class="font-bold">Mercedes E450 - Fast But Super Smooth & Comfortable | Faisal Khan</h1>
+                                <h1>faizal Khan</h1>
+                                <h1>28k views ‎ ‎ ‎ ‎ ‎  6 hours ago</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- video with the time tag -->
+                        <div class="">
+                            <img src="media/thumbnails/bmw.jpg" class="w-[25rem]">
+                            <h1 class="text-[1rem] w-10 text-white bg-black rounded-md mt-[-1.9rem] ml-[22rem] relative">17:46</h1>
+                        </div>
+                        <!-- profile with title  -->
+                        <div class="border border-black/0 w-[25rem] h-[7rem] mt-5 flex ">
+                            <div>
+                                <img src="media/icons/profilePhoto.png" class="h-12 w-14 rounded-[10rem]">
+                            </div>
+                            <div class="border border-black/0 w-[24rem] ml-2 ">
+                                <h1 class="font-bold">Mercedes E450 - Fast But Super Smooth & Comfortable | Faisal Khan</h1>
+                                <h1>faizal Khan</h1>
+                                <h1>28k views ‎ ‎ ‎ ‎ ‎  6 hours ago</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row justify-between p-10">
+                    <div>
+                        <!-- video with the time tag -->
+                        <div class="">
+                            <img src="media/thumbnails/bmw.jpg" class="w-[25rem]">
+                            <h1 class="text-[1rem] w-10 text-white bg-black rounded-md mt-[-1.9rem] ml-[22rem] relative">17:46</h1>
+                        </div>
+                        <!-- profile with title  -->
+                        <div class="border border-black/0 w-[25rem] h-[7rem] mt-5 flex ">
+                            <div>
+                                <img src="media/icons/profilePhoto.png" class="h-12 w-14 rounded-[10rem]">
+                            </div>
+                            <div class="border border-black/0 w-[24rem] ml-2 ">
+                                <h1 class="font-bold">Mercedes E450 - Fast But Super Smooth & Comfortable | Faisal Khan</h1>
+                                <h1>faizal Khan</h1>
+                                <h1>28k views ‎ ‎ ‎ ‎ ‎  6 hours ago</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- video with the time tag -->
+                        <div class="">
+                            <img src="media/thumbnails/bmw.jpg" class="w-[25rem]">
+                            <h1 class="text-[1rem] w-10 text-white bg-black rounded-md mt-[-1.9rem] ml-[22rem] relative">17:46</h1>
+                        </div>
+                        <!-- profile with title  -->
+                        <div class="border border-black/0 w-[25rem] h-[7rem] mt-5 flex ">
+                            <div>
+                                <img src="media/icons/profilePhoto.png" class="h-12 w-14 rounded-[10rem]">
+                            </div>
+                            <div class="border border-black/0 w-[24rem] ml-2 ">
+                                <h1 class="font-bold">Mercedes E450 - Fast But Super Smooth & Comfortable | Faisal Khan</h1>
+                                <h1>faizal Khan</h1>
+                                <h1>28k views ‎ ‎ ‎ ‎ ‎  6 hours ago</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- video with the time tag -->
+                        <div class="">
+                            <img src="media/thumbnails/bmw.jpg" class="w-[25rem]">
+                            <h1 class="text-[1rem] w-10 text-white bg-black rounded-md mt-[-1.9rem] ml-[22rem] relative">17:46</h1>
+                        </div>
+                        <!-- profile with title  -->
+                        <div class="border border-black/0 w-[25rem] h-[7rem] mt-5 flex ">
+                            <div>
+                                <img src="media/icons/profilePhoto.png" class="h-12 w-14 rounded-[10rem]">
+                            </div>
+                            <div class="border border-black/0 w-[24rem] ml-2 ">
+                                <h1 class="font-bold">Mercedes E450 - Fast But Super Smooth & Comfortable | Faisal Khan</h1>
+                                <h1>faizal Khan</h1>
+                                <h1>28k views ‎ ‎ ‎ ‎ ‎  6 hours ago</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- video with the time tag -->
+                        <div class="">
+                            <img src="media/thumbnails/bmw.jpg" class="w-[25rem]">
+                            <h1 class="text-[1rem] w-10 text-white bg-black rounded-md mt-[-1.9rem] ml-[22rem] relative">17:46</h1>
+                        </div>
+                        <!-- profile with title  -->
+                        <div class="border border-black/0 w-[25rem] h-[7rem] mt-5 flex ">
+                            <div>
+                                <img src="media/icons/profilePhoto.png" class="h-12 w-14 rounded-[10rem]">
+                            </div>
+                            <div class="border border-black/0 w-[24rem] ml-2 ">
+                                <h1 class="font-bold">Mercedes E450 - Fast But Super Smooth & Comfortable | Faisal Khan</h1>
+                                <h1>faizal Khan</h1>
+                                <h1>28k views ‎ ‎ ‎ ‎ ‎  6 hours ago</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
